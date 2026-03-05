@@ -35,9 +35,9 @@ const features = [
       "Dental emergencies don't wait for business hours. We're always open — nights, weekends, and holidays.",
     stat: "24/7",
     statLabel: "Availability",
-    bg: "bg-sky-50",
-    border: "border-sky-100",
-    iconBg: "bg-sky-100",
+    bg: "bg-gray-50",
+    border: "border-gray-100",
+    iconBg: "bg-gray-100",
   },
   {
     icon: "🔬",
@@ -135,7 +135,7 @@ export default function WhyChooseUs() {
           ].map((badge) => (
             <div
               key={badge.label}
-              className="flex items-center gap-2 bg-dental-gray border border-sky-100 px-4 py-2.5 rounded-full text-sm font-medium text-gray-600 hover:border-dental-blue/40 hover:text-dental-blue transition-colors"
+              className="flex items-center gap-2 bg-dental-gray border border-gray-100 px-4 py-2.5 rounded-full text-sm font-medium text-gray-600 hover:border-dental-blue/40 hover:text-dental-blue transition-colors"
             >
               <span>{badge.icon}</span>
               {badge.label}

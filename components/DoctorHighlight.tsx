@@ -27,7 +27,7 @@ export default function DoctorHighlight() {
   const { ref, inView } = useInView();
 
   return (
-    <section className="py-20 lg:py-28 bg-gradient-to-br from-dental-light via-white to-sky-50 overflow-hidden">
+    <section className="py-20 lg:py-28 bg-gradient-to-br from-dental-light via-white to-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={ref}
@@ -45,7 +45,7 @@ export default function DoctorHighlight() {
 
             <h2 className="text-3xl sm:text-4xl font-bold text-dental-navy mb-3 leading-tight">
               Dr. Betty
-              <span className="block text-xl font-medium text-sky-500 mt-1">
+              <span className="block text-xl font-medium text-gray-500 mt-1">
                 Lead Dental Surgeon
               </span>
             </h2>
@@ -104,7 +104,7 @@ export default function DoctorHighlight() {
             {/* Doctor illustration card */}
             <div className="relative mx-auto max-w-sm">
               {/* Main card */}
-              <div className="relative bg-gradient-to-br from-dental-blue to-dental-blue-dark rounded-3xl overflow-hidden shadow-2xl shadow-sky-300/40 aspect-[3/4]">
+              <div className="relative bg-gradient-to-br from-dental-blue to-dental-blue-dark rounded-3xl overflow-hidden shadow-2xl shadow-gray-300/40 aspect-[3/4]">
                 {/* Background pattern */}
                 <div
                   className="absolute inset-0 opacity-10"
@@ -121,10 +121,10 @@ export default function DoctorHighlight() {
                     👩‍⚕️
                   </div>
                   <h3 className="text-2xl font-bold text-center">Dr. Betty</h3>
-                  <p className="text-sky-200 text-sm mt-1 text-center">
+                  <p className="text-gray-200 text-sm mt-1 text-center">
                     Lead Dental Surgeon
                   </p>
-                  <p className="text-sky-200 text-sm mt-0.5 text-center">
+                  <p className="text-gray-200 text-sm mt-0.5 text-center">
                     Tori Speciality Dental Clinic
                   </p>
 
@@ -134,17 +134,17 @@ export default function DoctorHighlight() {
                   <div className="flex gap-4 text-center">
                     <div>
                       <p className="text-xl font-bold">10+</p>
-                      <p className="text-sky-200 text-xs">Years Exp</p>
+                      <p className="text-gray-200 text-xs">Years Exp</p>
                     </div>
                     <div className="w-px bg-white/20" />
                     <div>
                       <p className="text-xl font-bold">500+</p>
-                      <p className="text-sky-200 text-xs">Patients</p>
+                      <p className="text-gray-200 text-xs">Patients</p>
                     </div>
                     <div className="w-px bg-white/20" />
                     <div>
                       <p className="text-xl font-bold">5.0</p>
-                      <p className="text-sky-200 text-xs">Rating</p>
+                      <p className="text-gray-200 text-xs">Rating</p>
                     </div>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function DoctorHighlight() {
               {/* Floating badge: specialization */}
               <div className="absolute -top-4 -right-4 bg-dental-navy rounded-2xl shadow-xl p-3 text-center">
                 <p className="text-white font-bold text-sm">Specialist</p>
-                <p className="text-sky-400 text-xs">Dental Surgery</p>
+                <p className="text-gray-400 text-xs">Dental Surgery</p>
               </div>
             </div>
           </div>

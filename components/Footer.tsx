@@ -1,3 +1,5 @@
+import ToriLogo from "./ToriLogo";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -26,18 +28,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 bg-dental-blue rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-base">T</span>
-              </div>
+            <div className="flex items-center gap-3 mb-5">
+              <ToriLogo size={40} color="#ffffff" />
               <div>
                 <p className="font-bold text-white text-lg leading-none">
                   Tori Dental
                 </p>
-                <p className="text-sky-400 text-xs">Speciality Clinic</p>
+                <p className="text-gray-400 text-xs">Speciality Clinic</p>
               </div>
             </div>
-            <p className="text-sky-200/60 text-sm leading-relaxed mb-6">
+            <p className="text-gray-200/60 text-sm leading-relaxed mb-6">
               Premium dental care in the heart of Addis Ababa. Open 24/7 for
               all your dental needs.
             </p>
@@ -74,7 +74,7 @@ export default function Footer() {
                   key={social.label}
                   href="#"
                   aria-label={social.label}
-                  className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-sky-300 hover:bg-dental-blue hover:text-white transition-all"
+                  className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-gray-300 hover:bg-dental-blue hover:text-white transition-all"
                 >
                   {social.icon}
                 </a>
@@ -92,10 +92,10 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sky-200/60 hover:text-white text-sm transition-colors flex items-center gap-1.5 group"
+                    className="text-gray-200/60 hover:text-white text-sm transition-colors flex items-center gap-1.5 group"
                   >
                     <svg
-                      className="w-3 h-3 text-dental-blue opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="w-3 h-3 text-white opacity-0 group-hover:opacity-100 transition-opacity"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -122,10 +122,10 @@ export default function Footer() {
                 <li key={service}>
                   <a
                     href="#services"
-                    className="text-sky-200/60 hover:text-white text-sm transition-colors flex items-center gap-1.5 group"
+                    className="text-gray-200/60 hover:text-white text-sm transition-colors flex items-center gap-1.5 group"
                   >
                     <svg
-                      className="w-3 h-3 text-dental-blue opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="w-3 h-3 text-white opacity-0 group-hover:opacity-100 transition-opacity"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -150,7 +150,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="text-dental-blue mt-0.5">📍</span>
-                <p className="text-sky-200/60 text-sm leading-relaxed">
+                <p className="text-gray-200/60 text-sm leading-relaxed">
                   BMA Plaza 4th Floor
                   <br />
                   Gerji Mariam, Addis Ababa
@@ -162,21 +162,21 @@ export default function Footer() {
                 <span className="text-dental-blue">📞</span>
                 <a
                   href="tel:0911069547"
-                  className="text-sky-200/60 hover:text-white text-sm transition-colors"
+                  className="text-gray-200/60 hover:text-white text-sm transition-colors"
                 >
                   091 106 9547
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-dental-blue">🕒</span>
-                <p className="text-sky-200/60 text-sm">Open 24 Hours, 7 Days</p>
+                <p className="text-gray-200/60 text-sm">Open 24 Hours, 7 Days</p>
               </li>
             </ul>
 
             {/* CTA */}
             <a
               href="#appointment"
-              className="inline-flex items-center gap-2 mt-5 bg-dental-blue text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-dental-blue-dark transition-all shadow-lg shadow-sky-900/50"
+              className="inline-flex items-center gap-2 mt-5 bg-dental-blue text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-dental-blue-dark transition-all shadow-lg shadow-black/50"
             >
               Book Now
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -190,10 +190,10 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-sky-200/40 text-xs text-center sm:text-left">
+          <p className="text-gray-200/40 text-xs text-center sm:text-left">
             © {year} Tori Speciality Dental Clinic. All rights reserved.
           </p>
-          <p className="text-sky-200/40 text-xs">
+          <p className="text-gray-200/40 text-xs">
             BMA Plaza, Gerji Mariam, Addis Ababa, Ethiopia
           </p>
         </div>

@@ -22,8 +22,8 @@ const services = [
     title: "General Dentistry",
     description:
       "Comprehensive oral exams, cleanings, fillings, and preventive care to keep your smile healthy for life.",
-    color: "from-sky-50 to-blue-50",
-    border: "border-sky-100",
+    color: "from-gray-50 to-gray-100",
+    border: "border-gray-100",
     tag: "Most Popular",
   },
   {
@@ -76,7 +76,7 @@ const services = [
     title: "Dental Implants",
     description:
       "Permanent, natural-looking tooth replacements that restore full function and aesthetics.",
-    color: "from-cyan-50 to-sky-50",
+    color: "from-gray-50 to-gray-50",
     border: "border-cyan-100",
     tag: "Premium",
   },
@@ -169,7 +169,7 @@ export default function Services() {
           </p>
           <a
             href="#appointment"
-            className="inline-flex items-center gap-2 bg-dental-blue text-white px-8 py-3.5 rounded-full font-semibold hover:bg-dental-blue-dark transition-all shadow-lg shadow-sky-200"
+            className="inline-flex items-center gap-2 bg-dental-blue text-white px-8 py-3.5 rounded-full font-semibold hover:bg-dental-blue-dark transition-all shadow-lg shadow-gray-200"
           >
             Book a Free Consultation
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -40,7 +40,7 @@ export default function About() {
             }`}
           >
             {/* Main card */}
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-dental-light to-sky-100 aspect-[4/3] shadow-2xl shadow-sky-100">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-dental-light to-gray-100 aspect-[4/3] shadow-2xl shadow-gray-100">
               {/* Dental room illustration */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
@@ -48,7 +48,7 @@ export default function About() {
                   <p className="text-dental-navy font-semibold text-lg">
                     Modern Dental Suite
                   </p>
-                  <p className="text-sky-600 text-sm mt-1">
+                  <p className="text-gray-600 text-sm mt-1">
                     Equipped with latest technology
                   </p>
                 </div>
@@ -60,7 +60,7 @@ export default function About() {
             </div>
 
             {/* Floating badge */}
-            <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl shadow-sky-100 p-4 flex items-center gap-3 border border-sky-50">
+            <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl shadow-gray-100 p-4 flex items-center gap-3 border border-gray-50">
               <div className="w-10 h-10 bg-dental-light rounded-xl flex items-center justify-center">
                 <span className="text-xl">⭐</span>
               </div>
@@ -73,7 +73,7 @@ export default function About() {
             {/* Second floating badge */}
             <div className="absolute -top-5 -left-5 bg-dental-blue rounded-2xl shadow-xl p-4 text-white">
               <p className="font-bold text-lg leading-none">24/7</p>
-              <p className="text-sky-200 text-xs mt-0.5">Always Open</p>
+              <p className="text-gray-200 text-xs mt-0.5">Always Open</p>
             </div>
           </div>
 
@@ -149,7 +149,7 @@ export default function About() {
               {stats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="bg-dental-gray rounded-2xl p-3 text-center border border-sky-50 hover:border-dental-blue/30 hover:bg-dental-light/50 transition-colors"
+                  className="bg-dental-gray rounded-2xl p-3 text-center border border-gray-50 hover:border-dental-blue/30 hover:bg-dental-light/50 transition-colors"
                 >
                   <p className="font-bold text-dental-navy text-xl">{stat.value}</p>
                   <p className="text-gray-500 text-xs mt-0.5">{stat.label}</p>

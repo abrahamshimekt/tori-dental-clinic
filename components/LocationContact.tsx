@@ -80,7 +80,7 @@ export default function LocationContact() {
             {contactItems.map((item) => (
               <div
                 key={item.label}
-                className="bg-white rounded-2xl p-5 shadow-sm border border-sky-50 hover:shadow-md hover:border-dental-blue/20 transition-all"
+                className="bg-white rounded-2xl p-5 shadow-sm border border-gray-50 hover:shadow-md hover:border-dental-blue/20 transition-all"
               >
                 <div className="flex items-start gap-4">
                   <div
@@ -115,7 +115,7 @@ export default function LocationContact() {
             <div className="grid grid-cols-2 gap-3 pt-2">
               <a
                 href="tel:0911069547"
-                className="flex items-center justify-center gap-2 bg-dental-blue text-white py-3.5 rounded-2xl font-semibold text-sm hover:bg-dental-blue-dark transition-all shadow-lg shadow-sky-200"
+                className="flex items-center justify-center gap-2 bg-dental-blue text-white py-3.5 rounded-2xl font-semibold text-sm hover:bg-dental-blue-dark transition-all shadow-lg shadow-gray-200"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
@@ -138,7 +138,7 @@ export default function LocationContact() {
 
           {/* Map column */}
           <div className="lg:col-span-3">
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-sky-50 h-full min-h-80">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-50 h-full min-h-80">
               {/* Map header */}
               <div className="bg-dental-navy px-5 py-4 flex items-center gap-3">
                 <div className="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse" />
@@ -146,7 +146,7 @@ export default function LocationContact() {
                   <p className="text-white font-semibold text-sm">
                     Tori Speciality Dental Clinic
                   </p>
-                  <p className="text-sky-400 text-xs">
+                  <p className="text-gray-400 text-xs">
                     BMA Plaza 4th Floor, Gerji Mariam, Addis Ababa
                   </p>
                 </div>
@@ -154,7 +154,7 @@ export default function LocationContact() {
                   href="https://maps.google.com/?q=BMA+Plaza+Gerji+Mariam+Addis+Ababa"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-auto text-sky-400 hover:text-white text-xs font-medium transition-colors"
+                  className="ml-auto text-gray-400 hover:text-white text-xs font-medium transition-colors"
                 >
                   Open in Maps →
                 </a>

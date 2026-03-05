@@ -105,14 +105,14 @@ export default function Reviews() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 bg-white/10 text-sky-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-gray-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
             <span>⭐</span> Patient Reviews
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             What Our Patients{" "}
-            <span className="text-dental-blue">Are Saying</span>
+            <span className="text-gray-300">Are Saying</span>
           </h2>
-          <p className="text-sky-200/70 text-lg">
+          <p className="text-gray-200/70 text-lg">
             Rated 5.0 stars by 381+ patients on Google. Here&apos;s what some of
             them have to say.
           </p>
@@ -126,7 +126,7 @@ export default function Reviews() {
             <div className="w-px h-10 bg-white/20" />
             <div className="text-left">
               <p className="text-white font-semibold">381 Reviews</p>
-              <p className="text-sky-300 text-sm">on Google Maps</p>
+              <p className="text-gray-300 text-sm">on Google Maps</p>
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function Reviews() {
             {reviews.map((review, i) => (
               <div
                 key={review.name}
-                className={`snap-start w-80 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 flex-shrink-0 hover:bg-white/10 hover:border-dental-blue/40 transition-all duration-300 ${
+                className={`snap-start w-80 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 flex-shrink-0 hover:bg-white/10 hover:border-white/30 transition-all duration-300 ${
                   inView
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
@@ -163,7 +163,7 @@ export default function Reviews() {
                     <p className="text-white font-semibold text-sm truncate">
                       {review.name}
                     </p>
-                    <p className="text-sky-400/60 text-xs">{review.date}</p>
+                    <p className="text-gray-400/60 text-xs">{review.date}</p>
                   </div>
                   {/* Google icon */}
                   <svg
@@ -193,12 +193,12 @@ export default function Reviews() {
                 <StarRating rating={review.rating} />
 
                 {/* Service tag */}
-                <span className="inline-block mt-2 mb-3 bg-dental-blue/20 text-dental-blue text-xs font-medium px-2.5 py-0.5 rounded-full">
+                <span className="inline-block mt-2 mb-3 bg-white/10 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">
                   {review.service}
                 </span>
 
                 {/* Review text */}
-                <p className="text-sky-100/70 text-sm leading-relaxed line-clamp-4">
+                <p className="text-gray-100/70 text-sm leading-relaxed line-clamp-4">
                   &ldquo;{review.review}&rdquo;
                 </p>
               </div>

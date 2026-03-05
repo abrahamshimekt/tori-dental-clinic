@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import ToriLogo from "./ToriLogo";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,16 +26,16 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg shadow-sky-100/50"
+          ? "bg-white/95 backdrop-blur-md shadow-lg shadow-gray-100/50"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 bg-dental-blue rounded-xl flex items-center justify-center shadow-lg shadow-sky-200 group-hover:scale-105 transition-transform">
-              <span className="text-white font-bold text-base">T</span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="group-hover:scale-105 transition-transform">
+              <ToriLogo size={42} color={scrolled ? "#111111" : "#ffffff"} />
             </div>
             <div className="leading-tight">
               <p
@@ -46,7 +47,7 @@ export default function Navbar() {
               </p>
               <p
                 className={`text-xs transition-colors ${
-                  scrolled ? "text-sky-500" : "text-sky-200"
+                  scrolled ? "text-gray-500" : "text-gray-200"
                 }`}
               >
                 Speciality Clinic
@@ -84,7 +85,7 @@ export default function Navbar() {
             </a>
             <a
               href="#appointment"
-              className="bg-dental-blue text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-dental-blue-dark transition-all shadow-lg shadow-sky-200/60 hover:shadow-sky-300/70 hover:-translate-y-0.5"
+              className="bg-dental-blue text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-dental-blue-dark transition-all shadow-lg shadow-gray-200/60 hover:shadow-gray-300/70 hover:-translate-y-0.5"
             >
               Book Appointment
             </a>
@@ -121,7 +122,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="block text-gray-700 font-medium py-3 px-3 rounded-xl hover:bg-sky-50 hover:text-dental-blue transition-colors"
+                className="block text-gray-700 font-medium py-3 px-3 rounded-xl hover:bg-gray-50 hover:text-dental-blue transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
@@ -130,7 +131,7 @@ export default function Navbar() {
             <div className="pt-3 space-y-2">
               <a
                 href="#appointment"
-                className="block bg-dental-blue text-white px-5 py-3.5 rounded-2xl text-center font-semibold shadow-lg shadow-sky-200"
+                className="block bg-dental-blue text-white px-5 py-3.5 rounded-2xl text-center font-semibold shadow-lg shadow-gray-200"
                 onClick={() => setMobileOpen(false)}
               >
                 Book Appointment

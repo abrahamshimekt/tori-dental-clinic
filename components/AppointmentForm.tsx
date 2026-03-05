@@ -136,7 +136,7 @@ export default function AppointmentForm() {
           </p>
           <button
             onClick={() => setStatus("idle")}
-            className="bg-dental-blue text-white px-8 py-3.5 rounded-2xl font-semibold hover:bg-dental-blue-dark transition-all shadow-lg shadow-sky-200"
+            className="bg-dental-blue text-white px-8 py-3.5 rounded-2xl font-semibold hover:bg-dental-blue-dark transition-all shadow-lg shadow-gray-200"
           >
             Book Another Appointment
           </button>
@@ -221,7 +221,7 @@ export default function AppointmentForm() {
 
           {/* Form */}
           <div className="lg:col-span-3">
-            <div className="bg-dental-gray rounded-3xl p-7 border border-sky-50 shadow-sm">
+            <div className="bg-dental-gray rounded-3xl p-7 border border-gray-50 shadow-sm">
               <form onSubmit={handleSubmit} noValidate className="space-y-5">
                 {/* Row 1: Name + Phone */}
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -352,7 +352,7 @@ export default function AppointmentForm() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full bg-dental-blue text-white py-4 rounded-2xl font-bold text-base hover:bg-dental-blue-dark disabled:opacity-60 disabled:cursor-not-allowed transition-all shadow-lg shadow-sky-200 hover:-translate-y-0.5 hover:shadow-sky-300"
+                  className="w-full bg-dental-blue text-white py-4 rounded-2xl font-bold text-base hover:bg-dental-blue-dark disabled:opacity-60 disabled:cursor-not-allowed transition-all shadow-lg shadow-gray-200 hover:-translate-y-0.5 hover:shadow-gray-300"
                 >
                   {status === "loading" ? (
                     <span className="flex items-center justify-center gap-2">

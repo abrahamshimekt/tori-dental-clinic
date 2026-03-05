@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-dental-blue: #0ea5e9;
-  --color-dental-blue-dark: #0284c7;
-  --color-dental-light: #e0f2fe;
+  --color-dental-blue: #111111;
+  --color-dental-blue-dark: #000000;
+  --color-dental-light: #f5f5f5;
   --color-dental-navy: #0f172a;
   --color-dental-gray: #f8fafc;
   --font-sans: "Inter", system-ui, sans-serif;
@@ -33,7 +33,7 @@ body {
   background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0ea5e9;
+  background: #111111;
   border-radius: 3px;
 }
 
@@ -47,7 +47,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  background: linear-gradient(135deg, #111111, #444444);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -57,7 +57,7 @@ body {
 .gradient-border {
   position: relative;
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(135deg, #0ea5e9, #38bdf8) border-box;
+    linear-gradient(135deg, #111111, #555555) border-box;
   border: 2px solid transparent;
 }
 
